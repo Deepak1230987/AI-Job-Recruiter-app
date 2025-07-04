@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "AICruiter - AI-Powered Recruitment",
+  title: "Intervu.AI - AI-Powered Recruitment",
   description: "Transform your hiring process with AI-powered recruitment tools",
 };
 

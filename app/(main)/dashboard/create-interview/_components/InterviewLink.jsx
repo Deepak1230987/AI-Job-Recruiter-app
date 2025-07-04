@@ -11,6 +11,7 @@ import {
   Mail,
   MessageSquare,
   Plus,
+  MessageCircleCode,
 } from "lucide-react";
 import { toast } from "sonner";
 import Link from "next/link";
@@ -65,12 +66,12 @@ const InterviewLink = ({ formData, interviewId, questionCount }) => {
       <div className="text-center space-y-4">
         <div className="flex justify-center">
           <svg
-            width="80"
-            height="80"
+            width="60"
+            height="60"
             viewBox="0 0 100 100"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="w-20 h-20"
+            className="w-10 h-10"
           >
             <circle cx="50" cy="50" r="50" fill="#10B981" />
             <path
@@ -95,7 +96,7 @@ const InterviewLink = ({ formData, interviewId, questionCount }) => {
 
       {/* Interview Link Card */}
       <Card className="border border-gray-200">
-        <CardContent className="p-6 space-y-4">
+        <CardContent className="p-4 space-y-4">
           <div className="flex items-center justify-between">
             <h3 className="font-semibold text-gray-900">Interview Link</h3>
             <Badge
@@ -106,7 +107,7 @@ const InterviewLink = ({ formData, interviewId, questionCount }) => {
             </Badge>
           </div>
 
-          <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg border">
+          <div className="flex items-center gap-3 pl-3 bg-gray-50 rounded-lg border">
             <div className="flex-1 font-mono text-sm text-gray-700 truncate">
               {interviewLink}
             </div>
@@ -120,7 +121,7 @@ const InterviewLink = ({ formData, interviewId, questionCount }) => {
           </div>
 
           {/* Interview Details */}
-          <div className="flex items-center gap-6 text-sm text-gray-600 pt-2">
+          <div className="flex items-center gap-8 text-sm text-gray-600 pt-2">
             <div className="flex items-center gap-1">
               <Clock className="h-4 w-4" />
               <span>{duration}</span>
@@ -138,12 +139,12 @@ const InterviewLink = ({ formData, interviewId, questionCount }) => {
       </Card>
 
       {/* Share Options */}
-      <div className="space-y-4">
+      <div className="space-y-2">
         <h3 className="font-semibold text-gray-900">Share via</h3>
         <div className="grid grid-cols-3 gap-4">
           <Button
             variant="outline"
-            className="flex flex-col items-center gap-2 h-20 border-gray-200 hover:bg-gray-50"
+            className="flex flex-row items-center gap-2 h-10 border-gray-200 hover:bg-gray-50"
             onClick={() => handleShareVia("email")}
           >
             <Mail className="h-5 w-5 text-gray-600" />
@@ -152,7 +153,7 @@ const InterviewLink = ({ formData, interviewId, questionCount }) => {
 
           <Button
             variant="outline"
-            className="flex flex-col items-center gap-2 h-20 border-gray-200 hover:bg-gray-50"
+            className="flex flex-row items-center gap-2 h-10 border-gray-200 hover:bg-gray-50"
             onClick={() => handleShareVia("slack")}
           >
             <MessageSquare className="h-5 w-5 text-gray-600" />
@@ -161,10 +162,10 @@ const InterviewLink = ({ formData, interviewId, questionCount }) => {
 
           <Button
             variant="outline"
-            className="flex flex-col items-center gap-2 h-20 border-gray-200 hover:bg-gray-50"
+            className="flex flex-row items-center gap-2 h-10 border-gray-200 hover:bg-gray-50"
             onClick={() => handleShareVia("whatsapp")}
           >
-            <MessageSquare className="h-5 w-5 text-gray-600" />
+            <MessageCircleCode className="h-5 w-5 text-gray-600" />
             <span className="text-sm text-gray-700">WhatsApp</span>
           </Button>
         </div>
@@ -175,7 +176,7 @@ const InterviewLink = ({ formData, interviewId, questionCount }) => {
         <Link href="/dashboard">
           <Button
             variant="outline"
-            className="flex items-center gap-2 bg-gray-100"
+            className="flex items-center gap-2 bg-gray-200"
           >
             <ArrowLeft className="h-4 w-4" />
             Back to Dashboard

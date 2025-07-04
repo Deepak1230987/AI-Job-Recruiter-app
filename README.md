@@ -1,8 +1,8 @@
-# 🤖 AIcruiter - AI-Powered Interview Platform
+# 🤖 Intervu.AI - AI-Powered Interview Platform
 
-**AIcruiter** is a cutting-edge AI-powered interview platform that revolutionizes the recruitment process by automating candidate interviews, generating personalized questions, and providing comprehensive feedback analysis. Built with modern web technologies, it offers a seamless experience for both recruiters and candidates.
+**Intervu.AI** is a cutting-edge AI-powered interview platform that revolutionizes the recruitment process by automating candidate interviews, generating personalized questions, and providing comprehensive feedback analysis. Built with modern web technologies, it offers a seamless experience for both recruiters and candidates.
 
-![AIcruiter Platform](./public/landing.jpg)
+![Intervu.AI Platform](./public/landing.jpg)
 
 ## ✨ Features
 
@@ -232,7 +232,7 @@ recruite_ai/
 
 ## 🤝 Contributing
 
-We welcome contributions to AIcruiter! Please follow these steps:
+We welcome contributions to Intervu.AI! Please follow these steps:
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -259,7 +259,7 @@ If you encounter any issues or have questions:
 1. Check the [Issues](https://github.com/your-username/recruite_ai/issues) page
 2. Create a new issue with detailed description
 3. Join our community discussions
-4. Contact support at support@aicruiter.com
+
 
 ## 🌟 Acknowledgments
 
@@ -273,6 +273,6 @@ If you encounter any issues or have questions:
 ---
 
 <div align="center">
-  <p>Built with ❤️ by the AIcruiter Team</p>
-  <p>© 2025 AIcruiter. All rights reserved.</p>
+  <p>Built with ❤️ by the Intervu.AI</p>
+  <p>© 2025 Intervu.AI. All rights reserved.</p>
 </div>

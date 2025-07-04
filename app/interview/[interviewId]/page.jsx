@@ -24,6 +24,7 @@ const page = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [userName, setUserName] = useState("");
+  const [userEmail, setUserEmail] = useState("");
   const { interviewInfo, setInterviewInfo } = useContext(InterviewDataContext);
   const [joinLoading, setJoinLoading] = useState(false);
   const router = useRouter();
@@ -84,6 +85,7 @@ const page = () => {
       setInterviewInfo({
         data: data,
         userName: userName,
+        userEmail: userEmail,
       });
       router.push(`/interview/${interviewId}/start`);
       toast.success("Joined interview...");
@@ -149,7 +151,7 @@ const page = () => {
         {/* Header */}
         <div className="flex flex-col items-center mb-4">
           <h2 className="text-2xl font-bold text-center text-[#16A6E9] mb-1">
-            AIcruiter
+            Intervu.AI
           </h2>
           <p className="text-gray-500 text-sm">AI-Powered Interview Platform</p>
         </div>
@@ -198,6 +200,18 @@ const page = () => {
             className="w-full"
             value={userName}
             onChange={(e) => setUserName(e.target.value)}
+          />
+        </div>
+        <div className="mb-6">
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Enter your email
+          </label>
+          <Input
+            type="email"
+            placeholder="example@gmail.com"
+            className="w-full"
+            value={userEmail}
+            onChange={(e) => setUserEmail(e.target.value)}
           />
         </div>
         {/* Instructions Card */}

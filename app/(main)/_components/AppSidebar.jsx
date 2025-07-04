@@ -35,11 +35,9 @@ const AppSidebar = () => {
                 <path d="M8 22h8" />
               </svg>
             </div>
-            <span className="text-2xl font-bold text-gray-800">
-              AI
-              <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
-                cruiter
-              </span>
+
+            <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent text-xl font-bold">
+              Intervu.AI
             </span>
           </div>
         </div>

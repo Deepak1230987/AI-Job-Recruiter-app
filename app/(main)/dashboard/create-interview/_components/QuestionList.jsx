@@ -345,7 +345,7 @@ const QuestionList = ({
             </>
           )}
         </Button>
-        <div className="space-x-3">
+        <div className="space-x-3 flex ">
           <Button
             variant="outline"
             onClick={handleSaveDraft}
@@ -365,7 +365,7 @@ const QuestionList = ({
             type="submit"
             disabled={saveLoading}
             onClick={finishCreatingInterview}
-            className="w-full mb-4"
+            className=" mb-4"
           >
             {saveLoading ? (
               <>
